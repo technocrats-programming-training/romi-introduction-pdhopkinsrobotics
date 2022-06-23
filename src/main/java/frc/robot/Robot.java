@@ -17,10 +17,10 @@ public class Robot extends ProceduralRobot {
   @Override
   public void autonomousProcedure() throws InterruptedException {
     // Write your code here:
-    int rightSpeed = 1;
-    int rightSeconds90 = 1;
-    int leftSpeed = -1;
-    int leftSeconds90 = 1;
+    double rightSpeed = 1;
+    double rightSeconds90 = 1;
+    double leftSpeed = -1;
+    double leftSeconds90 = 1;
 
     
     driveTime(1, 2); //drive up
@@ -32,7 +32,7 @@ public class Robot extends ProceduralRobot {
     driveTime(1, 1); //drive left
     turnTime(leftSpeed, leftSeconds); //90 left
     driveTime(1, 1); //drive down
-    sleepSeconds(2);
+    sleepSeconds(2.0);
     driveTime(1, .5); //drive down
   }
 }
